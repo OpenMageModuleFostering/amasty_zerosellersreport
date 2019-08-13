@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Amasty_ZeroSellersReport",
+    "type": "magento-module",
+    "license": "Single-Use-License",
+    "homepage": "",
+    "description": "Zero product sales tracker extension for Magento.",
+    "authors": [
+    {
+        "name": "Amasty Team",
+        "email": "support@amasty.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

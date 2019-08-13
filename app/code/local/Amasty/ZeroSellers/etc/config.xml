@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2016 Amasty (https://www.amasty.com)
+ * @package Amasty_ZeroSellers
+ */
+-->
+<!--
+    Copyright (c) 2012 Amasty (http://www.amasty.com)
+-->
+<config>
+    <modules>
+        <Amasty_ZeroSellers>
+            <version>1.0.0</version>
+        </Amasty_ZeroSellers>
+    </modules>
+
+    <global>
+        <blocks>
+            <amzerosellers>
+                <class>Amasty_ZeroSellers_Block</class>
+            </amzerosellers>
+        </blocks>
+        <models>
+            <amzerosellers>
+                <class>Amasty_ZeroSellers_Model</class>
+            </amzerosellers>
+        </models>
+        <helpers>
+            <amzerosellers>
+                <class>Amasty_ZeroSellers_Helper</class>
+            </amzerosellers>
+        </helpers>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Amasty_ZeroSellers after="Mage_Adminhtml">Amasty_ZeroSellers_Adminhtml</Amasty_ZeroSellers>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <default>
+        <amzerosellers>
+            <general>
+                <period>30</period>
+                <threshold>0</threshold>
+            </general>
+        </amzerosellers>
+    </default>
+</config>

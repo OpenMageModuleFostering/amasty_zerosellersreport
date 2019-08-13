@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2016 Amasty (https://www.amasty.com)
+ * @package Amasty_ZeroSellers
+ */
+-->
+<!--
+    Copyright (c) 2010 Amasty (http://www.amasty.com)
+-->
+<config>
+    <menu>
+        <report>
+            <children>
+                <products>
+                    <children>
+                        <amzerosellers_purchased translate="title" module="amzerosellers">
+                            <title>Zero Sellers</title>
+                            <action>adminhtml/amzerosellers</action>
+                            <sort_order>10</sort_order>
+                        </amzerosellers_purchased>
+                    </children>
+                </products>
+            </children>
+        </report>
+    </menu>
+
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <report>
+                        <children>
+                            <products>
+                                <children>
+                                    <amzerosellers_purchased translate="title" module="amzerosellers">
+                                        <title>Zero Sellers</title>
+                                        <children>
+                                            <addspecial translate="title">
+                                                <title>Modify Special Price using Price</title>
+                                            </addspecial>
+                                            <modifyspecial translate="title">
+                                                <title>Update Special Price</title>
+                                            </modifyspecial>
+                                            <disable translate="title">
+                                                <title>Disable Product</title>
+                                            </disable>
+                                        </children>
+                                    </amzerosellers_purchased>
+                                </children>
+                            </products>
+                        </children>
+                    </report>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <amzerosellers translate="title" module="amzerosellers">
+                                        <title>Amasty - Zero Sellers</title>
+                                    </amzerosellers>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

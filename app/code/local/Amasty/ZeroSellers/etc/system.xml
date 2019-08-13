@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2016 Amasty (https://www.amasty.com)
+ * @package Amasty_ZeroSellers
+ */
+-->
+<config>
+    <sections>
+        <amzerosellers translate="label" module="amzerosellers">
+            <label>Zero Sellers</label>
+            <tab>amasty</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>160115</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <period translate="label comment">
+                            <label>Period in Days</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-digits validate-zero-or-greater required-entry</validate>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>0 for today only</comment>
+                        </period>
+                        <threshold translate="label comment">
+                            <label>Threshold</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-digits validate-zero-or-greater required-entry</validate>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Show products purchased not more times than specified in this field</comment>
+                        </threshold>
+                    </fields>
+                </general>
+            </groups>
+        </amzerosellers>
+    </sections>
+</config>
